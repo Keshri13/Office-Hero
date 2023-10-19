@@ -1,6 +1,5 @@
 package com.example.officehero.data.repository
 
-import com.cyntra.cds.ui.common.util.convertToJson
 import com.example.officehero.constants.DEVICE_ID
 import com.example.officehero.constants.SOURCE
 import com.example.officehero.data.model.request.CrashErrorRequest
@@ -9,6 +8,7 @@ import com.example.officehero.data.model.response.DeviceLogResponse
 import com.example.officehero.data.model.response.SessionStartResponse
 import com.example.officehero.data.network.handleApi
 import com.example.officehero.data.network.service.SessionService
+import com.example.officehero.ui.common.util.convertToJson
 import com.google.gson.Gson
 import javax.inject.Inject
 

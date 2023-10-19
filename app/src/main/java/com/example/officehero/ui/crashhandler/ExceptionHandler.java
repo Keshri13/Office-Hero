@@ -1,7 +1,6 @@
 package com.example.officehero.ui.crashhandler;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Build;
 import android.util.Log;
 
@@ -58,9 +57,9 @@ public void uncaughtException(Thread thread, Throwable exception) {
         errorReport.append(LINE_SEPARATOR);
 
         Log.e("TAG", errorReport.toString());
-		Intent intent = new Intent(myContext, CrashErrorActivity.class);
-		intent.putExtra("error", errorReport.toString());
-		myContext.startActivity(intent);
+//		Intent intent = new Intent(myContext, CrashErrorActivity.class);
+//		intent.putExtra("error", errorReport.toString());
+//		myContext.startActivity(intent);
 
         android.os.Process.killProcess(android.os.Process.myPid());
         System.exit(1);

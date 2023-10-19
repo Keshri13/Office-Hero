@@ -29,7 +29,7 @@ class LoginActivity : BaseActivity() {
         init()
         observers()
         setUpClickListeners()
-        checkPermission()
+//        checkPermission()
         writeLogResultKeyPairUseAppendMode(
             "Login Screen... ",
             true
@@ -106,8 +106,9 @@ class LoginActivity : BaseActivity() {
 
     fun setUpClickListeners() {
         binding.signInBtn.setOnClickListener {
+            viewModel.setIsPermissionCheck(true)
             if (!viewModel.isPermissionCheck.value) {
-                checkPermission()
+//                checkPermission()
             } else {
                 if (isValidate()) {
                     writeLogResultKeyPairUseAppendMode(

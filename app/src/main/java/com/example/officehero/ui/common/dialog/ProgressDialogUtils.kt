@@ -6,7 +6,6 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.util.Log
 import android.view.Window
-import com.example.officehero.R
 
 class ProgressDialogUtils {
 
@@ -27,7 +26,7 @@ class ProgressDialogUtils {
                 mDialog = Dialog(context)
                 mDialog?.requestWindowFeature(Window.FEATURE_NO_TITLE)
                 mDialog?.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-                mDialog?.setContentView(R.layout.item_progress_dialog)
+//                mDialog?.setContentView(R.layout.item_progress_dialog)
                 mDialog?.setCancelable(cancelable)
                 mDialog?.setCanceledOnTouchOutside(cancelable)
                 mDialog?.show()

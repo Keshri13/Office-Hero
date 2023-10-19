@@ -29,11 +29,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures {
         dataBinding = true
@@ -81,6 +81,10 @@ dependencies {
     annotationProcessor ("androidx.room:room-compiler:$roomVersion")
     implementation ("androidx.room:room-ktx:$roomVersion")
     kapt ("androidx.room:room-compiler:$roomVersion")
+
+    //Image Loading
+    implementation("com.squareup.picasso:picasso:2.8")
+    //implementation("com.github.smarteist:Android-Image-Slider:1.4.0")
 
 
 

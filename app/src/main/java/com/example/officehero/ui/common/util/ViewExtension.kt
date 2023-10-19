@@ -17,12 +17,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.flowWithLifecycle
 import androidx.lifecycle.lifecycleScope
-import com.example.officehero.ui.internet.NoInternetActivity
-import com.example.officehero.R
 import com.example.officehero.constants.FROM
 import com.example.officehero.constants.ITEM_ADDED
 import com.example.officehero.constants.ITEM_NAME
 import com.example.officehero.constants.network.IMAGE_URL
+import com.example.officehero.ui.internet.NoInternetActivity
 import com.google.gson.Gson
 import com.squareup.picasso.Picasso
 import kotlinx.coroutines.delay
@@ -209,11 +208,11 @@ fun ImageView.load(imageUrl : String) {
 }
 
 fun ImageView.loadWithPlaceHolder(imageUrl : String) {
-    Picasso.get()
-        .load(IMAGE_URL+imageUrl)
-        .placeholder(R.drawable.icon_no_item)
-        .error(R.drawable.icon_no_item)
-        .into(this)
+//    Picasso.get()
+//        .load(IMAGE_URL+imageUrl)
+//        .placeholder(R.drawable.icon_no_item)
+//        .error(R.drawable.icon_no_item)
+//        .into(this)
 }
 
 fun getBitmap(imageUrl : String) : Bitmap {

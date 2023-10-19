@@ -5,9 +5,6 @@ import android.app.Dialog
 import android.content.Context
 import android.util.Log
 import android.view.Window
-import android.widget.Button
-import android.widget.ImageView
-import com.example.officehero.R
 import com.example.officehero.data.local.sharedPreference.SharedPreferenceUtil
 import com.example.officehero.data.model.request.FloatCollection
 import com.example.officehero.data.model.request.Tender
@@ -82,15 +79,15 @@ class Util @Inject constructor(val sharedPreferenceUtil: SharedPreferenceUtil) {
             val dialogHelp = Dialog(this, android.R.style.Theme_Black_NoTitleBar_Fullscreen)
             dialogHelp.requestWindowFeature(Window.FEATURE_NO_TITLE)
             dialogHelp.setCancelable(false)
-            dialogHelp.setContentView(R.layout.dialog_help)
+//            dialogHelp.setContentView(R.layout.dialog_help)
 
-            dialogHelp.findViewById<ImageView>(R.id.close_dialog_help).setOnClickListener {
-                dialogHelp.dismiss()
-            }
-
-            dialogHelp.findViewById<Button>(R.id.btn_call_assistant).setOnClickListener {
-                dialogHelp.dismiss()
-            }
+//            dialogHelp.findViewById<ImageView>(R.id.close_dialog_help).setOnClickListener {
+//                dialogHelp.dismiss()
+//            }
+//
+//            dialogHelp.findViewById<Button>(R.id.btn_call_assistant).setOnClickListener {
+//                dialogHelp.dismiss()
+//            }
             writeLogResultKeyPairUseAppendMode(
                 "Open help popup",
                 true
